@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutterrheinmain/core/resources/colors.dart';
 
 class GlowingShadowDecoration extends BoxDecoration {
-  GlowingShadowDecoration({Color color, Color backgroundColor})
+  GlowingShadowDecoration({Color shadowColor, Color backgroundColor})
       : super(
-          boxShadow: [GlowingShadow(color)],
+          boxShadow: [GlowingShadow(shadowColor)],
           color: backgroundColor,
         );
 }

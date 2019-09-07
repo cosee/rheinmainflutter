@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterrheinmain/core/resources/colors.dart';
+import 'package:provider/provider.dart';
+
 import 'package:flutterrheinmain/widget_tree/view/decoration/glowing_shadow_decoration.dart';
 import 'package:flutterrheinmain/widget_tree/view/provider/widget_tree_provider.dart';
-import 'package:provider/provider.dart';
 
 class WidgetTreeNode extends StatelessWidget implements PreferredSizeWidget {
   WidgetTreeNode(
@@ -11,7 +11,9 @@ class WidgetTreeNode extends StatelessWidget implements PreferredSizeWidget {
       this.preferredHeight,
       this.padding = 5,
       this.margin = 5,
-      this.shadowColor = Colors.red});
+      this.shadowColor = Colors.red,
+      this.backgroundColor = Colors.white,
+      });
 
   final int depth;
   final Widget child;
@@ -19,6 +21,7 @@ class WidgetTreeNode extends StatelessWidget implements PreferredSizeWidget {
   final double padding;
   final double margin;
   final Color shadowColor;
+  final Color backgroundColor;
 
   //Since it needs to pose as an AppBar as well
   @override
@@ -37,8 +40,8 @@ class WidgetTreeNode extends StatelessWidget implements PreferredSizeWidget {
 
   _getDecoration(int selectedDepth) => selectedDepth == depth
       ? GlowingShadowDecoration(
-          color: shadowColor,
-          backgroundColor: Colors.white,
+          shadowColor: shadowColor,
+          backgroundColor: backgroundColor,
         )
-      : BoxDecoration(color: Colors.white);
+      : BoxDecoration(color: backgroundColor);
 }

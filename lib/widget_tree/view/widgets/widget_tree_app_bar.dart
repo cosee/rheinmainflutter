@@ -8,12 +8,12 @@ class WidgetTreeAppBar extends AbstractAppBar {
       : super(key: key, preferredHeight: preferredHeight);
 
   final String text;
-  
+
   @override
   Widget build(BuildContext context) => AppBar(
         title: Text(
           text,
-          style: TextStyle(color: CustomColors.coseedarkgrey),
+          style: TextStyle(color: CustomColors.coseeDarkGrey),
         ),
       );
 }

@@ -37,7 +37,7 @@ class ScaffoldBody extends StatelessWidget {
         padding: 0,
         child: Container(
           width: 180,
-          decoration: GlowingShadowDecoration(),
+          decoration: GlowingShadowDecoration(shadowColor: Colors.white.withOpacity(0)),
           child: InteractiveScaffold(),
         ),
       );

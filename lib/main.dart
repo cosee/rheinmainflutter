@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        canvasColor: CustomColors.coseedarkgrey,
+        canvasColor: CustomColors.coseeDarkGrey,
         primaryColor: CustomColors.coseeLightGreen,
       ),
       home: WidgetTreePage(),

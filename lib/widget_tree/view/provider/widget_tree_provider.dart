@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class WidgetTreeProvider with ChangeNotifier {
-  final double maxDepth = 10;
+  final double maxDepth = 3;
 
   int _depth = 0;
   double get depth => _depth.toDouble();
