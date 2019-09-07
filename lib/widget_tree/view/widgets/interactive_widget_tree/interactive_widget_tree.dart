@@ -4,7 +4,8 @@ import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tre
 
 class InteractiveWidgetTree extends StatelessWidget {
   final Padding verticalPadding = Padding(padding: EdgeInsets.all(20));
-  final Padding horizontalPadding = Padding(padding: EdgeInsets.only(right: 40));
+  final Padding horizontalPadding =
+      Padding(padding: EdgeInsets.only(right: 40));
 
   @override
   Widget build(BuildContext context) => Column(
@@ -15,6 +16,8 @@ class InteractiveWidgetTree extends StatelessWidget {
           _createLevel1(),
           verticalPadding,
           _createLevel2(),
+          // verticalPadding,
+          // _createLevel3()
         ],
       );
 
@@ -37,6 +40,16 @@ class InteractiveWidgetTree extends StatelessWidget {
           WidgetTreeNode(depth: 2, child: Text('WidgetTree')),
           horizontalPadding,
           WidgetTreeNode(depth: 2, child: Text('Scaffold')),
+        ],
+      );
+
+//Not sure if we want to get into this depth
+  Widget _createLevel3() => Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          WidgetTreeNode(depth: 3, child: Text('Some core-widget')),
+          horizontalPadding,
+          WidgetTreeNode(depth: 3, child: Text('Text')),
         ],
       );
 }
