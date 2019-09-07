@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
 import 'package:provider/provider.dart';
 
 import 'package:flutterrheinmain/widget_tree/view/decoration/glowing_shadow_decoration.dart';
@@ -31,11 +32,15 @@ class ScaffoldBody extends StatelessWidget {
         child: DepthSlider(),
       );
 
-  _createInteractiveScaffold() => Container(
-        width: 180,
-        decoration: GlowingShadowDecoration(),
-        child: InteractiveScaffold(),
+  _createInteractiveScaffold() => WidgetTreeNode(
+        depth: 0,
+        padding: 0,
+        child: Container(
+          width: 180,
+          decoration: GlowingShadowDecoration(),
+          child: InteractiveScaffold(),
+        ),
       );
 
-      _createInteractiveWidgetTree() => InteractiveWidgetTree();
+  _createInteractiveWidgetTree() => InteractiveWidgetTree();
 }
