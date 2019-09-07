@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterrheinmain/core/resources/colors.dart';
-import 'package:flutterrheinmain/widget_tree/provider/widget_tree_provider.dart';
 import 'package:provider/provider.dart';
+
+import 'package:flutterrheinmain/core/resources/colors.dart';
+import 'package:flutterrheinmain/widget_tree/view/provider/widget_tree_provider.dart';
 
 class DepthSlider extends StatelessWidget {
   @override

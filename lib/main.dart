@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutterrheinmain/core/resources/colors.dart';
-import 'package:flutterrheinmain/widget_tree/pages/widget_tree_page.dart';
+import 'package:flutterrheinmain/widget_tree/view/pages/widget_tree_page.dart';
 
 void main() => runApp(MyApp());
 
