@@ -1,0 +1,7 @@
+import 'package:flutter/material.dart';
+
+class CustomColors {
+  static Color coseeMiddleGreen = Color(0xFF4faf47);
+  static Color coseeLightGreen = Color(0xFFd4d800);
+  static Color coseedarkgrey = Color(0xFF343434);
+}
