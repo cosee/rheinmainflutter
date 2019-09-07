@@ -4,7 +4,7 @@ import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tre
 
 class InteractiveWidgetTree extends StatelessWidget {
   final Padding verticalPadding = Padding(padding: EdgeInsets.all(20));
-  final Padding horizontalPadding = Padding(padding: EdgeInsets.only(right: 50));
+  final Padding horizontalPadding = Padding(padding: EdgeInsets.only(right: 40));
 
   @override
   Widget build(BuildContext context) => Column(
@@ -34,9 +34,9 @@ class InteractiveWidgetTree extends StatelessWidget {
         children: <Widget>[
           WidgetTreeNode(depth: 2, child: Text('Slider')),
           horizontalPadding,
-          WidgetTreeNode(depth: 2, child: Text('Scaffold')),
-          horizontalPadding,
           WidgetTreeNode(depth: 2, child: Text('WidgetTree')),
+          horizontalPadding,
+          WidgetTreeNode(depth: 2, child: Text('Scaffold')),
         ],
       );
 }

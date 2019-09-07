@@ -17,8 +17,8 @@ class ScaffoldBody extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               _createVerticalDepthSlider(),
-              _createInteractiveScaffold(),
               _createInteractiveWidgetTree(),
+              _createInteractiveScaffold(),
             ],
           ),
         ),
@@ -37,7 +37,6 @@ class ScaffoldBody extends StatelessWidget {
         padding: 0,
         child: Container(
           width: 180,
-          decoration: GlowingShadowDecoration(shadowColor: Colors.white.withOpacity(0)),
           child: InteractiveScaffold(),
         ),
       );
