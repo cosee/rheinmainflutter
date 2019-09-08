@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterrheinmain/widget_tree/view/widgets/arrow/arrow.dart';
 import 'package:provider/provider.dart';
 
 import 'package:flutterrheinmain/widget_tree/view/provider/scaffold_text_provider.dart';
@@ -13,13 +14,24 @@ class InteractiveWidgetTree extends StatelessWidget {
   Widget build(BuildContext context) => Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          WidgetTreeNode(depth: 0, child: Text('Scaffold')),
-          verticalPadding,
+          _createLevel0(),
+          _createLevel0Arrows(),
           _createLevel1(),
-          verticalPadding,
+          _createLevel1Arrows(),
           _createLevel2(),
           // verticalPadding,
           // _createLevel3()
+        ],
+      );
+
+  Widget _createLevel0() => WidgetTreeNode(depth: 0, child: Text('Scaffold'));
+
+  Widget _createLevel0Arrows() => Row(
+        children: <Widget>[
+          Transform.rotate(angle: 0.7, child: Arrow(height: 50)),
+          SizedBox(width: 40),
+          Transform.rotate(angle: -0.01, child: Arrow(height: 40)),
+          SizedBox(width: 40),
         ],
       );
 
@@ -31,6 +43,16 @@ class InteractiveWidgetTree extends StatelessWidget {
           WidgetTreeNode(
               depth: 1, child: Text('Body'), shadowColor: Colors.blue),
           Padding(padding: EdgeInsets.only(right: 100)),
+        ],
+      );
+
+        Widget _createLevel1Arrows() => Row(
+        children: <Widget>[
+          Transform.rotate(angle: 0.9, child: Arrow(height: 60)),
+          SizedBox(width: 40),
+          Arrow(height: 40),
+          SizedBox(width: 40),
+          Transform.rotate(angle: -0.9, child: Arrow(height: 60)),
         ],
       );
 
