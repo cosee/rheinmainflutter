@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:flutterrheinmain/widget_tree/view/provider/scaffold_text_provider.dart';
 import 'package:flutterrheinmain/widget_tree/view/provider/widget_tree_provider.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/depth_slider.dart';
-import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_scaffold/interactive_scaffold.dart';
+import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_scaffold.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/interactive_widget_tree.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/widget_tree_app_bar.dart';
