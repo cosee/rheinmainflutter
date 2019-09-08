@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterrheinmain/widget_tree/view/provider/text_field_provider.dart';
+import 'package:flutterrheinmain/widget_tree/view/provider/scaffold_text_provider.dart';
 
 import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
 import 'package:provider/provider.dart';
@@ -55,9 +55,13 @@ class InteractiveWidgetTree extends StatelessWidget {
         ],
       );
 
-  _createScaffoldTreeNode() => Consumer<TextFieldProvider>(
+  _createScaffoldTreeNode() => Consumer<ScaffoldTextProvider>(
       builder: (_, provider, __) => GestureDetector(
             onTap: provider.toggleText,
-            child: WidgetTreeNode(depth: 2, child: Text(provider.text)),
+            child: WidgetTreeNode(
+              depth: 2,
+              child: Text(provider.text),
+              backgroundColor: provider.backgroundColor,
+            ),
           ));
 }

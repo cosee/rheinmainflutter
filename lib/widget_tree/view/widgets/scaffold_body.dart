@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:flutterrheinmain/widget_tree/view/provider/text_field_provider.dart';
+import 'package:flutterrheinmain/widget_tree/view/provider/scaffold_text_provider.dart';
 import 'package:flutterrheinmain/widget_tree/view/provider/widget_tree_provider.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/depth_slider.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
@@ -26,7 +26,7 @@ class ScaffoldBody extends StatelessWidget {
 
   _createChangeNotifierProviders({Widget child}) => MultiProvider(providers: [
         ChangeNotifierProvider(builder: (_) => WidgetTreeProvider()),
-        ChangeNotifierProvider(builder: (_) => TextFieldProvider()),
+        ChangeNotifierProvider(builder: (_) => ScaffoldTextProvider()),
       ], child: child);
 
   Widget _createVerticalDepthSlider() => RotatedBox(

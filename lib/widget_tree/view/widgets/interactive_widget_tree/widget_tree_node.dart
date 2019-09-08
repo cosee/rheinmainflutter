@@ -12,8 +12,8 @@ class WidgetTreeNode extends StatelessWidget implements PreferredSizeWidget {
     this.padding = 5,
     this.margin = 5,
     this.shadowColor = Colors.red,
-    this.backgroundColor = Colors.white,
-  });
+    Color backgroundColor,
+  }) : backgroundColor = backgroundColor ?? Colors.white;
 
   final int depth;
   final Widget child;
