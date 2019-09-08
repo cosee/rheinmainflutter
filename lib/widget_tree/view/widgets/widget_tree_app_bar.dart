@@ -4,7 +4,7 @@ import 'package:flutterrheinmain/core/resources/colors.dart';
 import 'package:flutterrheinmain/core/widgets/abstract_app_bar.dart';
 
 class WidgetTreeAppBar extends AbstractAppBar {
-  WidgetTreeAppBar({Key key, this.text = 'Widget Tree', double preferredHeight})
+  WidgetTreeAppBar({Key key, this.text = 'Widget Tree App Bar', double preferredHeight})
       : super(key: key, preferredHeight: preferredHeight);
 
   final String text;

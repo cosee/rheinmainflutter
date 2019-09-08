@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterrheinmain/widget_tree/view/provider/scaffold_text_provider.dart';
-
-import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
 import 'package:provider/provider.dart';
+
+import 'package:flutterrheinmain/widget_tree/view/provider/scaffold_text_provider.dart';
+import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
 
 class InteractiveWidgetTree extends StatelessWidget {
   final Padding verticalPadding = Padding(padding: EdgeInsets.all(20));

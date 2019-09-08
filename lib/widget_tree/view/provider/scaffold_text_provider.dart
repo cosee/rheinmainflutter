@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutterrheinmain/core/resources/colors.dart';
+
 class ScaffoldTextProvider with ChangeNotifier {
   static const String scaffoldText = 'Scaffold';
   static const String scaffnewText = 'Scaffnew';
@@ -10,7 +12,7 @@ class ScaffoldTextProvider with ChangeNotifier {
   void toggleText() {
     if (text == scaffoldText) {
       text = scaffnewText;
-      backgroundColor = Colors.deepOrange;
+      backgroundColor = CustomColors.coseeLightGreen;
     } else {
       text = scaffoldText;
       backgroundColor = null;
