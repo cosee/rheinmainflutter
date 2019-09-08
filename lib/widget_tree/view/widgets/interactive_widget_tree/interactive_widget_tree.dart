@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterrheinmain/widget_tree/view/widgets/arrow/arrow.dart';
 import 'package:provider/provider.dart';
 
 import 'package:flutterrheinmain/widget_tree/view/provider/scaffold_text_provider.dart';
+import 'package:flutterrheinmain/widget_tree/view/widgets/arrow/arrow.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
 
 class InteractiveWidgetTree extends StatelessWidget {
@@ -19,8 +19,6 @@ class InteractiveWidgetTree extends StatelessWidget {
           _createLevel1(),
           _createLevel1Arrows(),
           _createLevel2(),
-          // verticalPadding,
-          // _createLevel3()
         ],
       );
 
@@ -28,9 +26,9 @@ class InteractiveWidgetTree extends StatelessWidget {
 
   Widget _createLevel0Arrows() => Row(
         children: <Widget>[
-          Transform.rotate(angle: 0.7, child: Arrow(height: 50)),
+          Transform.rotate(angle: 0.7, child: Arrow(height: 40)),
           SizedBox(width: 40),
-          Transform.rotate(angle: -0.01, child: Arrow(height: 40)),
+          Transform.rotate(angle: -0.01, child: Arrow(height: 30)),
           SizedBox(width: 40),
         ],
       );
@@ -48,11 +46,11 @@ class InteractiveWidgetTree extends StatelessWidget {
 
         Widget _createLevel1Arrows() => Row(
         children: <Widget>[
-          Transform.rotate(angle: 0.9, child: Arrow(height: 60)),
-          SizedBox(width: 40),
-          Arrow(height: 40),
-          SizedBox(width: 40),
-          Transform.rotate(angle: -0.9, child: Arrow(height: 60)),
+          Transform.rotate(angle: 1, child: Arrow(height: 40)),
+          SizedBox(width: 50),
+          Arrow(height: 30),
+          SizedBox(width: 50),
+          Transform.rotate(angle: -0.85, child: Arrow(height: 38)),
         ],
       );
 
@@ -64,16 +62,6 @@ class InteractiveWidgetTree extends StatelessWidget {
           WidgetTreeNode(depth: 2, child: Text('WidgetTree')),
           horizontalPadding,
           _createScaffoldTreeNode(),
-        ],
-      );
-
-//Not sure if we want to get into this depth
-  Widget _createLevel3() => Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-          WidgetTreeNode(depth: 3, child: Text('Some core-widget')),
-          horizontalPadding,
-          WidgetTreeNode(depth: 3, child: Text('Text')),
         ],
       );
 
