@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 import 'package:flutterrheinmain/core/resources/colors.dart';
+import 'package:flutterrheinmain/widget_tree/view/provider/text_field_provider.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/depth_slider.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
-
 import 'package:flutterrheinmain/widget_tree/view/widgets/widget_tree_app_bar.dart';
 
 class InteractiveScaffold extends StatelessWidget {
@@ -36,7 +38,7 @@ class InteractiveScaffold extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               _createWidgetTreeNode('WidgetTree'),
-              _createWidgetTreeNode('Scaffold'),
+              _createScaffoldTreeNode(),
             ],
           )
         ],
@@ -59,4 +61,10 @@ class InteractiveScaffold extends StatelessWidget {
           child: Text(text),
         ),
       );
+
+  _createScaffoldTreeNode() => Consumer<TextFieldProvider>(
+      builder: (_, provider, __) => GestureDetector(
+            onTap: provider.toggleText,
+            child: _createWidgetTreeNode(provider.text),
+          ));
 }

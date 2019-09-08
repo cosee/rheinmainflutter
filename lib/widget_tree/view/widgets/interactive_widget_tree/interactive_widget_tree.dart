@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterrheinmain/widget_tree/view/provider/text_field_provider.dart';
 
 import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
+import 'package:provider/provider.dart';
 
 class InteractiveWidgetTree extends StatelessWidget {
   final Padding verticalPadding = Padding(padding: EdgeInsets.all(20));
@@ -39,7 +41,7 @@ class InteractiveWidgetTree extends StatelessWidget {
           horizontalPadding,
           WidgetTreeNode(depth: 2, child: Text('WidgetTree')),
           horizontalPadding,
-          WidgetTreeNode(depth: 2, child: Text('Scaffold')),
+          _createScaffoldTreeNode(),
         ],
       );
 
@@ -52,4 +54,10 @@ class InteractiveWidgetTree extends StatelessWidget {
           WidgetTreeNode(depth: 3, child: Text('Text')),
         ],
       );
+
+  _createScaffoldTreeNode() => Consumer<TextFieldProvider>(
+      builder: (_, provider, __) => GestureDetector(
+            onTap: provider.toggleText,
+            child: WidgetTreeNode(depth: 2, child: Text(provider.text)),
+          ));
 }

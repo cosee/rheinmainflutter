@@ -5,15 +5,15 @@ import 'package:flutterrheinmain/widget_tree/view/decoration/glowing_shadow_deco
 import 'package:flutterrheinmain/widget_tree/view/provider/widget_tree_provider.dart';
 
 class WidgetTreeNode extends StatelessWidget implements PreferredSizeWidget {
-  WidgetTreeNode(
-      {@required this.depth,
-      @required this.child,
-      this.preferredHeight,
-      this.padding = 5,
-      this.margin = 5,
-      this.shadowColor = Colors.red,
-      this.backgroundColor = Colors.white,
-      });
+  WidgetTreeNode({
+    @required this.depth,
+    @required this.child,
+    this.preferredHeight,
+    this.padding = 5,
+    this.margin = 5,
+    this.shadowColor = Colors.red,
+    this.backgroundColor = Colors.white,
+  });
 
   final int depth;
   final Widget child;
@@ -29,7 +29,10 @@ class WidgetTreeNode extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) => Consumer<WidgetTreeProvider>(
-      builder: (_, WidgetTreeProvider provider, __) => _createNode(provider));
+          builder: (_, WidgetTreeProvider provider, __) {
+        print('Rebuilding Tree Node with depth=$depth');
+        return _createNode(provider);
+      });
 
   Widget _createNode(WidgetTreeProvider provider) => Container(
         decoration: _getDecoration(provider.depth.toInt()),
