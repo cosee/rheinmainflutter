@@ -30,10 +30,13 @@ class WidgetTreePage extends StatelessWidget {
         ),
       );
 
-  _createChangeNotifierProviders({Widget child}) => MultiProvider(providers: [
-        ChangeNotifierProvider(builder: (_) => WidgetTreeProvider()),
-        ChangeNotifierProvider(builder: (_) => ScaffoldTextProvider()),
-      ], child: child);
+  _createChangeNotifierProviders({Widget child}) => MultiProvider(
+        providers: [
+          ChangeNotifierProvider(builder: (_) => WidgetTreeProvider()),
+          ChangeNotifierProvider(builder: (_) => ScaffoldTextProvider()),
+        ],
+        child: child,
+      );
 
   Widget _separatorBuilder(BuildContext context, int index) =>
       SizedBox(width: 50);
