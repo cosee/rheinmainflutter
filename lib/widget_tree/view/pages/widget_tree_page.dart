@@ -9,7 +9,16 @@ import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tre
 import 'package:flutterrheinmain/widget_tree/view/widgets/interactive_widget_tree/widget_tree_node.dart';
 import 'package:flutterrheinmain/widget_tree/view/widgets/widget_tree_app_bar.dart';
 
-class WidgetTreePage extends StatelessWidget {
+class WidgetTreePage extends StatefulWidget {
+  @override
+  _WidgetTreePageState createState() => _WidgetTreePageState();
+}
+
+class _WidgetTreePageState extends State<WidgetTreePage> {
+  var widgetTreeProvider = WidgetTreeProvider();
+  var scaffoldTextProvider = ScaffoldTextProvider();
+
+
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: WidgetTreeAppBar(),
@@ -32,8 +41,10 @@ class WidgetTreePage extends StatelessWidget {
 
   _createChangeNotifierProviders({Widget child}) => MultiProvider(
         providers: [
-          ChangeNotifierProvider(builder: (_) => WidgetTreeProvider()),
-          ChangeNotifierProvider(builder: (_) => ScaffoldTextProvider()),
+          ChangeNotifierProvider.value(value: widgetTreeProvider),
+          ChangeNotifierProvider.value(value: scaffoldTextProvider),
+          // ChangeNotifierProvider(builder: (_) => WidgetTreeProvider()),
+          // ChangeNotifierProvider(builder: (_) => ScaffoldTextProvider()),
         ],
         child: child,
       );

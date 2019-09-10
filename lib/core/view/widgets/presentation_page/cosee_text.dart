@@ -15,15 +15,17 @@ class CoseeText extends StatelessWidget {
     this.text, {
     this.color = Colors.white,
     this.fontSize = 20,
+    this.usePadding = true,
   });
 
   final String text;
   final Color color;
   final double fontSize;
+  final bool usePadding;
 
   @override
   Widget build(BuildContext context) => Container(
-        margin: EdgeInsets.only(bottom: 10),
+        margin:  usePadding ? EdgeInsets.only(bottom: 10) : null,
         child: Text(
           ' $text ',
           style: TextStyle(

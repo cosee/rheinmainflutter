@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/core/resources/colors.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/presentation_page.dart';
-import 'package:flutterrheinmain/widget_tree/view/pages/widget_tree_page.dart';
+import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
+import 'package:flutterrheinmain/presentation/view/pages/presentation_page.dart';
 
 void main() => runApp(MyApp());
 
