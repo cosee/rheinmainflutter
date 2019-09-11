@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterrheinmain/core/resources/colors.dart';
 
 enum TextSize {
   BIG,
@@ -16,22 +17,33 @@ class CoseeText extends StatelessWidget {
     this.color = Colors.white,
     this.fontSize = 20,
     this.usePadding = true,
+    this.bold = false,
   });
 
   final String text;
   final Color color;
   final double fontSize;
   final bool usePadding;
+  final bool bold;
 
   @override
-  Widget build(BuildContext context) => Container(
-        margin:  usePadding ? EdgeInsets.only(bottom: 10) : null,
-        child: Text(
-          ' $text ',
-          style: TextStyle(
-            fontSize: fontSize,
-            backgroundColor: color,
+  Widget build(BuildContext context) => Row(
+        children: <Widget>[
+          Container(
+            margin: usePadding ? EdgeInsets.only(bottom: 10) : null,
+            padding: EdgeInsets.only(left: 20),
+            color: color,
+            child: _createText(),
           ),
+        ],
+      );
+
+  _createText() => Text(
+        '$text  ',
+        style: TextStyle(
+          fontWeight: this.bold ? FontWeight.w700 : null,
+          fontSize: fontSize,
+          color: CustomColors.coseeDarkGrey,
         ),
       );
 }

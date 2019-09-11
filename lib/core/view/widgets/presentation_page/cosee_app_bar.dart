@@ -22,6 +22,7 @@ class CoseeAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: CoseeText(
           text,
           fontSize: 30,
+          bold: true,
           color: CustomColors.coseeLightGreen,
         ),
       );
