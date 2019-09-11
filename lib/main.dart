@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
         canvasColor: CustomColors.coseeDarkGrey,
         primaryColor: CustomColors.coseeLightGreen,
       ),
-      // home: WidgetTreePage(),
       home: PresentationPage(),
     );
   }

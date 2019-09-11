@@ -42,7 +42,7 @@ class CoseeText extends StatelessWidget {
   _createText() => Text(
         '$text  ',
         style: TextStyle(
-          fontWeight: this.bold ? FontWeight.w700 : null,
+          fontWeight: this.bold ? null : FontWeight.w300,
           fontSize: fontSize,
           color: CustomColors.coseeDarkGrey,
         ),
