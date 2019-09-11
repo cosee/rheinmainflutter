@@ -28,10 +28,11 @@ class CoseeText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
             margin: usePadding ? EdgeInsets.only(bottom: 10) : null,
-            padding: EdgeInsets.only(left: 20),
+            padding: EdgeInsets.only(left: 30),
             color: color,
             child: _createText(),
           ),
