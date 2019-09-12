@@ -53,6 +53,9 @@ flutter:
    - assets/images/imperative_style.png
    - assets/images/declarative_style.png
    - assets/images/awesome_widget.png
+   - assets/images/change_notifier.png
+   - assets/images/change_notifier_provider.png
+   - assets/images/consumer.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
