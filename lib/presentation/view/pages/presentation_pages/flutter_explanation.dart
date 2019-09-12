@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_text.dart';
+import 'package:flutterrheinmain/core/view/widgets/presentation_page/presentation_step_text.dart';
 
 class FlutterExplanation extends StatelessWidget {
   @override
@@ -13,9 +13,9 @@ class FlutterExplanation extends StatelessWidget {
   Widget _createContent() => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          CoseeText('Flutter'),
-          CoseeText('is'),
-          CoseeText('awesome!'),
+          PresentationStepText('Flutter', 0),
+          PresentationStepText('is', 1),
+          PresentationStepText('awesome!', 2),
         ],
       );
 }

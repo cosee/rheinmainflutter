@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_text.dart';
+import 'package:flutterrheinmain/core/view/widgets/presentation_page/presentation_step_text.dart';
 
 class PerformancePage extends StatelessWidget {
   @override
@@ -13,9 +13,9 @@ class PerformancePage extends StatelessWidget {
   Widget _createContent() => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          CoseeText('CPU'),
-          CoseeText('RAM'),
-          CoseeText('Storage'),
+          PresentationStepText('CPU', 0),
+          PresentationStepText('RAM', 1),
+          PresentationStepText('Storage', 2),
         ],
       );
 }

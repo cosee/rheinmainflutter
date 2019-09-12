@@ -1,7 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_text.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+
+import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
+import 'package:flutterrheinmain/core/view/widgets/presentation_page/text/cosee_text.dart';
 
 class FlutterForWebPage extends StatelessWidget {
   @override

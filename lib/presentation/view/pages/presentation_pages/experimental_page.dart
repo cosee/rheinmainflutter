@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_text.dart';
-import 'package:flutterrheinmain/core/view/widgets/right_aligned_widget.dart';
+import 'package:flutterrheinmain/core/view/widgets/presentation_page/presentation_step_text.dart';
 
 class ExperimentalPage extends StatelessWidget {
   @override
@@ -21,12 +20,16 @@ class ExperimentalPage extends StatelessWidget {
   _createLeftSide() => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          CoseeText('Geiler Text alla'),
-          CoseeText('Übertrieben cooler Text!'),
+          PresentationStepText('Geiler Text alla', 0),
+          PresentationStepText('Übertrieben cooler Text!', 1),
 
-          CoseeText('Mir kommen gerade die Tränen so toll ist der Text'),
-          CoseeText('Kein Scheiß man, ich könnte kotzen vor Glück!',
-              usePadding: false),
+          PresentationStepText(
+              'Mir kommen gerade die Tränen so toll ist der Text', 2),
+          PresentationStepText(
+            'Kein Scheiß man, ich könnte kotzen vor Glück!',
+            3,
+            usePadding: false,
+          ),
           // RightAlignedWidget(CoseeText('Noch besserer Text')),
         ],
       );
@@ -34,9 +37,9 @@ class ExperimentalPage extends StatelessWidget {
   _createRightSide() => Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          CoseeText('Wer bist du überhaupt?'),
-          CoseeText('Übertrieben cooler Text!\n LOL'),
-          CoseeText('Übertrieben cooler Text!'),
+          PresentationStepText('Wer bist du überhaupt?', 4),
+          PresentationStepText('Übertrieben cooler Text!\n LOL', 5),
+          PresentationStepText('Übertrieben cooler Text!', 6),
           // RightAlignedWidget(CoseeText('Noch besserer Text')),
         ],
       );

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_text.dart';
 
 class FastDeploymentPage extends StatelessWidget {
   @override

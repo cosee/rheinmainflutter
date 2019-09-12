@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_text.dart';
+import 'package:flutterrheinmain/core/view/widgets/presentation_page/presentation_step_text.dart';
 
 class FlutterForWebExplanation extends StatelessWidget {
   @override
@@ -13,8 +13,8 @@ class FlutterForWebExplanation extends StatelessWidget {
   Widget _createContent() => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          CoseeText('dart2js'),
-          CoseeText('is in preview state'),
+          PresentationStepText('dart2js', 0),
+          PresentationStepText('is in preview state', 1),
         ],
       );
 }
