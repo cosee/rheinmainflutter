@@ -7,7 +7,7 @@ class FastDeploymentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => CoseePage(
         titleText: 'Fast Deployment',
-        // child: _fastDeploymentExample(),
+        child: _fastDeploymentExample(),
       );
 
 

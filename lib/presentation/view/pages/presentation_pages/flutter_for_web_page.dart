@@ -6,19 +6,25 @@ import 'package:webview_flutter/webview_flutter.dart';
 class FlutterForWebPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>
-      CoseePage(titleText: 'Flutter for web', child: _createContent());
+      CoseePage(titleText: 'Flutter for web', child: _createContent(context));
 
-  Widget _createContent() => Column(
-    
+  Widget _createContent(BuildContext context) => Column(
+        // mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          CoseeText('TODO: change URL to flutter for web host'),
-          _createWebView(),
+          CoseeText('Yow Dawg, i heared you like hybrid apps...'),
+          Center(child: _createWebView(context)),
         ],
       );
 
-  Widget _createWebView() => Expanded(child:
-   WebView(
+  Widget _createWebView(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    return SizedBox(
+      height: size.height * 0.6,
+      width: size.width * 0.9,
+      child: WebView(
         initialUrl: 'https://www.google.com',
-      ),);
+      ),
+    );
+  }
 }

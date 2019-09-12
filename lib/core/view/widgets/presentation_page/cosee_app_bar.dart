@@ -17,7 +17,7 @@ class CoseeAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) => Container(
-        margin: EdgeInsets.only(top: 25),
+        margin: EdgeInsets.only(top: 40),
         color: CustomColors.coseeDarkGrey,
         child: CoseeText(
           text,
