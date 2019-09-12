@@ -14,8 +14,11 @@ class FlutterExplanationPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           PresentationStepText('Google\'s new UI toolkit', 0),
-          PresentationStepText('is', 1),
-          PresentationStepText('Programming language: Dart', 2),
+          PresentationStepText('Programmed in Dart', 1),
+          PresentationStepText('Using the Skia rendering engine', 2),
+          PresentationStepText('Pixel perfect', 3),
+          PresentationStepText('Fast & productive', 4),
+          PresentationStepText('A whole lotta fun!', 5, bold: true,),
         ],
       );
 }

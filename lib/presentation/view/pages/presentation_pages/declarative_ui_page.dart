@@ -15,17 +15,21 @@ class DeclarativeUiPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           _createUiEqualsImage(),
-          PresentationStepText('UI is rebuild from scratch to reflect current state of app', 1),
-          PresentationStepText('No imperative modifying of UI  \n   widget.setText(\'text\')', 2),
+          PresentationStepText(
+              'UI is rebuild from scratch to reflect current state of app', 1),
+          PresentationStepText(
+              'No imperative modifying of UI  \n   widget.setText(\'text\')',
+              2),
         ],
       );
 
   Widget _createUiEqualsImage() => Center(
         child: PresentationStep(
-            Image.asset(
-              'assets/images/ui_equals_function_of_state.png',
-              height: 180,
-            ),
-            0),
+          Image.asset(
+            'assets/images/ui_equals_function_of_state.png',
+            height: 180,
+          ),
+          0,
+        ),
       );
 }

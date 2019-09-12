@@ -49,7 +49,7 @@ class StateManagementPage extends StatelessWidget {
         ],
       );
 
-  _createImage(String imagePath, int step, {double height = 100}) =>
+  _createImage(String imagePath, int step, {double height = 115}) =>
       PresentationStep(
         Image.asset(imagePath, height: height),
         step,

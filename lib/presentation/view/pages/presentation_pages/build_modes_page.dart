@@ -26,7 +26,7 @@ class BuildModesPage extends StatelessWidget {
           PresentationStepText('Optimized for fast development cycle', 1),
           PresentationStepText('Uses Dart-VM to run Dart code', 2),
           PresentationStepText('Hot reload enabled', 3),
-          PresentationStepText('Debugging enabled', 4,)
+          PresentationStepText('Debugging enabled', 4)
         ],
       );
 
@@ -34,7 +34,8 @@ class BuildModesPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
           _createHeaderText('Release:  ', 5),
-          PresentationStepText('Compiled into native     \nARM/x86 libraries', 6),
+          PresentationStepText(
+              'Compiled into native     \nARM/x86 libraries', 6),
           PresentationStepText('Optimized for fast startup/execution   ', 7),
           PresentationStepText('Build is minified   ', 8),
           PresentationStepText('Hot reload disabled   ', 9),
@@ -42,10 +43,6 @@ class BuildModesPage extends StatelessWidget {
         ],
       );
 
-      _createHeaderText(String text, int step) => PresentationStepText(
-            text,
-            step,
-            fontSize: 26,
-            bold: true,
-          );
+  _createHeaderText(String text, int step) =>
+      PresentationStepText(text, step, fontSize: 26, bold: true);
 }

@@ -43,54 +43,40 @@ class DeclarativeUiCodePage extends StatelessWidget {
         ),
         step,
       );
-
-  // Widget _createImperativeStyleImage() => PresentationStep(
-  //     Image.asset(
-  //       'assets/images/imperative_style.png',
-  //       height: 150,
-  //     ),
-  //     3);
-
-  // Widget _createDeclarativeStyleImage() => PresentationStep(
-  //     Image.asset(
-  //       'assets/images/declarative_style.png',
-  //       height: 150,
-  //     ),
-  //     3);
 }
 
-// _imperativeCode() {
-//   bool red;
-//   ImperativeCode b = ImperativeCode();
+_imperativeCode() {
+  bool red;
+  ImperativeCode b = ImperativeCode();
 
-//   // Imperative style
-//   b.setColor(red);
-//   b.clearChildren();
-//   ViewC c3 = new ViewC("...");
-//   b.add(c3);
-// }
+  // Imperative style
+  b.setColor(red);
+  b.clearChildren();
+  ViewC c3 = new ViewC("...");
+  b.add(c3);
+}
 
-// _declarativeCode() {
-//   bool red;
-//   ImperativeCode b = ImperativeCode();
+_declarativeCode() {
+  bool red;
+  ImperativeCode b = ImperativeCode();
 
-//   // Declarative style
-//   return ViewB(
-//     color: red,
-//     child: ViewC('...'),
-//   );
-// }
+  // Declarative style
+  return ViewB(
+    color: red,
+    child: ViewC('...'),
+  );
+}
 
-// class ImperativeCode {
-//   setColor(bool a) {}
-//   clearChildren() {}
-//   add(ViewC c) {}
-// }
+class ImperativeCode {
+  setColor(bool a) {}
+  clearChildren() {}
+  add(ViewC c) {}
+}
 
-// class ViewC {
-//   ViewC(String a);
-// }
+class ViewC {
+  ViewC(String a);
+}
 
-// class ViewB {
-//   ViewB({bool color, ViewC child});
-// }
+class ViewB {
+  ViewB({bool color, ViewC child});
+}
