@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/steps/presentation_step_text.dart';
 import 'package:flutterrheinmain/core/view/widgets/right_aligned_widget.dart';
+import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/cosee_page.dart';
+import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/presentation_step_text.dart';
 
 class StatelessWidgetPage extends StatelessWidget {
   @override

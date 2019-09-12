@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/text/header_text.dart';
+import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/text/header_text.dart';
 import 'package:flutterrheinmain/presentation/view/provider/presentation_state_provider.dart';
 
 class StepwisePresentationContent extends StatelessWidget {

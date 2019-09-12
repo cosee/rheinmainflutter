@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'package:flutterrheinmain/core/resources/colors.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/steps/stepwise_presentation_content.dart';
+import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/stepwise_presentation_content.dart';
 import 'package:flutterrheinmain/presentation/view/provider/presentation_state_provider.dart';
 
 class StepwisePresentationPage extends StatelessWidget {

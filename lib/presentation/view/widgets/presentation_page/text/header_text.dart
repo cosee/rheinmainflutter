@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/core/resources/colors.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/text/cosee_text.dart';
+import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/text/cosee_text.dart';
 
 class HeaderText extends StatelessWidget {
   HeaderText(this.text);
