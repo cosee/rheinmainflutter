@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/cosee_page.dart';
+import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/stepwise_presentation_page.dart';
 import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/presentation_step.dart';
-import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/presentation_step_text.dart';
 
 class DeclarativeUiCodePage extends StatelessWidget {
   @override
@@ -23,7 +22,12 @@ class DeclarativeUiCodePage extends StatelessWidget {
       );
 
   _createViewImage() => Center(
-      child: _createImage('assets/images/declarative_uI_changes.png', 0, height: 160), );
+        child: _createImage(
+          'assets/images/declarative_uI_changes.png',
+          0,
+          height: 160,
+        ),
+      );
 
   _createCodeImagesRow() => Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

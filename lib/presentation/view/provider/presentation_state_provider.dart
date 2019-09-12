@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class PresentationStepProvider extends ChangeNotifier {
-
   PresentationStepProvider(this._maxStep);
 
   int _step = 0;
