@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_page.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/presentation_step_text.dart';
+import 'package:flutterrheinmain/core/view/widgets/presentation_page/steps/presentation_step_text.dart';
 
 class FlutterForWebExplanation extends StatelessWidget {
   @override

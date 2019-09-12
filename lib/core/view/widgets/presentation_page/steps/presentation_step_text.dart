@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutterrheinmain/core/view/widgets/presentation_page/presentation_step.dart';
+import 'package:flutterrheinmain/core/view/widgets/presentation_page/steps/presentation_step.dart';
 import 'package:flutterrheinmain/core/view/widgets/presentation_page/text/cosee_text.dart';
 
 class PresentationStepText extends StatelessWidget {
