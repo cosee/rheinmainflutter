@@ -5,7 +5,7 @@ import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_text.
 
 class FastDeploymentPage extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => CoseePage(
+  Widget build(BuildContext context) => StepwisePresentationPage(
         titleText: 'Fast Deployment',
         child: _fastDeploymentExample(),
       );

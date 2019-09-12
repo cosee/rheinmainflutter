@@ -5,7 +5,7 @@ import 'package:flutterrheinmain/core/view/widgets/presentation_page/cosee_text.
 
 class FlutterExplanation extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => CoseePage(
+  Widget build(BuildContext context) => StepwisePresentationPage(
         titleText: 'What is Flutter?',
         child: _createContent(),
       );

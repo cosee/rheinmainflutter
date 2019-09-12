@@ -6,7 +6,7 @@ import 'package:flutterrheinmain/core/view/widgets/right_aligned_widget.dart';
 
 class ExperimentalPage extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => CoseePage(
+  Widget build(BuildContext context) => StepwisePresentationPage(
       titleText: 'Sick experiments -- DO NOT PRESENT --',
       child: _createContent());
 

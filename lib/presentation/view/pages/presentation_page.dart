@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/experimental_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/fast_deployment.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_explanation.dart';
+import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_for_web_explanation.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_for_web_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/intro_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/performance_page.dart';
@@ -29,5 +30,6 @@ class PresentationPage extends StatelessWidget {
     WidgetTreePage(),
     PerformancePage(),
     FlutterForWebPage(),
+    FlutterForWebExplanation(),
   ];
 }

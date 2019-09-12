@@ -6,7 +6,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 class FlutterForWebPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>
-      CoseePage(titleText: 'Flutter for web', child: _createContent(context));
+      StepwisePresentationPage(titleText: 'Flutter for web', child: _createContent(context));
 
   Widget _createContent(BuildContext context) => Column(
         // mainAxisSize: MainAxisSize.min,

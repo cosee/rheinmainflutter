@@ -7,7 +7,7 @@ import 'package:flutterrheinmain/core/view/widgets/right_aligned_widget.dart';
 class StatefulWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>
-      CoseePage(titleText: 'StatefulWidget', child: _createContent());
+      StepwisePresentationPage(titleText: 'StatefulWidget', child: _createContent());
 
   Widget _createContent() => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
