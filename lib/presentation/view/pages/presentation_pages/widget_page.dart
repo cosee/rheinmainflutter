@@ -25,7 +25,7 @@ class WidgetPage extends StatelessWidget {
         child: PresentationStep(
             Image.asset(
               'assets/images/ui_equals_function_of_state.png',
-              height: 180,
+              height: 172,
             ),
             3),
       );

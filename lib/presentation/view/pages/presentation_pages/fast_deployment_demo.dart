@@ -9,21 +9,16 @@ class FastDeploymentDemoPage extends StatelessWidget {
         child: _fastDeploymentExample(),
       );
 
-
-  _fastDeploymentExample() => 
-  // Center(
-        // child: 
-        Container(
-          // margin: EdgeInsets.only(left: 200),
-          // padding: EdgeInsets.symmetric(horizontal: 20),
-          decoration: BoxDecoration(
+  _fastDeploymentExample() => Container(
+        // margin: EdgeInsets.only(left: 200),
+        // padding: EdgeInsets.symmetric(horizontal: 20),
+        decoration: BoxDecoration(
             // color: Colors.green,
             // borderRadius: BorderRadius.circular(50),
-          ),
-          child: Text(
-            'Fast! Isn\'t it?',
-            style: TextStyle(fontSize: 50),
-          ),
-        // ),
+            ),
+        child: Text(
+          'Fast! Isn\'t it?',
+          style: TextStyle(fontSize: 50),
+        ),
       );
 }
