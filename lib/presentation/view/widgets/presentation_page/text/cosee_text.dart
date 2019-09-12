@@ -18,10 +18,12 @@ class CoseeText extends StatelessWidget {
     this.fontSize = 20,
     this.usePadding = true,
     this.bold = false,
+    this.fontColor = CustomColors.coseeDarkGrey,
   });
 
   final String text;
   final Color color;
+  final Color fontColor;
   final double fontSize;
   final bool usePadding;
   final bool bold;
@@ -44,7 +46,7 @@ class CoseeText extends StatelessWidget {
         style: TextStyle(
           fontWeight: this.bold ? null : FontWeight.w300,
           fontSize: fontSize,
-          color: CustomColors.coseeDarkGrey,
+          color: fontColor,
         ),
       );
 }

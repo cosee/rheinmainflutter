@@ -8,6 +8,7 @@ import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flut
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_for_web_explanation.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_for_web_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/intro_page.dart';
+import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/outro_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/state_management_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/widget_build_method_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/widget_page.dart';
@@ -33,5 +34,6 @@ class PresentationPage extends StatelessWidget {
     BuildModesPage(),
     FlutterForWebPage(),
     FlutterForWebExplanationPage(),
+    OutroPage(),
   ];
 }
