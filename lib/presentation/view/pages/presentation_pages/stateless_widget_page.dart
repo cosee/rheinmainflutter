@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/core/view/widgets/right_aligned_widget.dart';
-import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/stepwise_presentation_page.dart';
+import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/stepwise_presentation_page.dart';
 import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/presentation_step_text.dart';
 
 class StatelessWidgetPage extends StatelessWidget {

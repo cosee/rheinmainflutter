@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/stepwise_presentation_page.dart';
+import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/stepwise_presentation_page.dart';
 import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/presentation_step.dart';
 
 class DeclarativeUiCodePage extends StatelessWidget {
@@ -14,9 +14,7 @@ class DeclarativeUiCodePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           _createViewImage(),
-          SizedBox(
-            height: 10,
-          ),
+          SizedBox(height: 10),
           _createCodeImagesRow(),
         ],
       );
