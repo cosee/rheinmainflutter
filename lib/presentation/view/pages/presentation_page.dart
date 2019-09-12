@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/build_modes_page.dart';
 
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/experimental_page.dart';
-import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/fast_deployment.dart';
+import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/fast_deployment_demo.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_explanation.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_for_web_explanation.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_for_web_page.dart';
@@ -10,6 +11,7 @@ import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/perf
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/programming_language.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/stateful_widget_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/stateless_widget_page.dart';
+import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/widget_page.dart';
 import 'package:flutterrheinmain/widget_tree/view/pages/widget_tree_page.dart';
 
 class PresentationPage extends StatelessWidget {
@@ -23,8 +25,10 @@ class PresentationPage extends StatelessWidget {
     // ExperimentalPage(),
     IntroPage(),
     FlutterExplanation(),
+    WidgetPage(),
     ProgrammingLanguagePage(),
-    FastDeploymentPage(),
+    FastDeploymentDemoPage(),
+    BuildModesPage(),
     StatelessWidgetPage(),
     StatefulWidgetPage(),
     WidgetTreePage(),

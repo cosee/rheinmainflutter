@@ -13,7 +13,7 @@ class ProgrammingLanguagePage extends StatelessWidget {
   Widget _createContent() => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          PresentationStepText('Declarative', 0),
+          PresentationStepText('Futures are baked in!', 0),
           PresentationStepText('Futures are baked in!', 1),
           PresentationStepText('Storage', 2),
         ],
