@@ -14,21 +14,21 @@ class StepwisePresentationContent extends StatelessWidget {
     var provider = Provider.of<PresentationStepProvider>(context);
     return GestureDetector(
       onTap: provider.next,
-      child: _createPageContent(),
+      child: Container(
+        color:
+            Colors.transparent, //Dirty hack for whole-screen gesture-detection,
+        child: _createPageContent(),
+      ),
     );
   }
 
-  Widget _createPageContent() => Container(
-        color: Colors.transparent, //Dirty hack GestureDetector for whole screen
-        child: Column(
-          // mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            HeaderText(titleText),
-            Padding(
-              padding: const EdgeInsets.only(top: 15),
-              child: child,
-            ),
-          ],
-        ),
-      );
+  Widget _createPageContent() => Column(
+    children: <Widget>[
+      HeaderText(titleText),
+      Padding(
+        padding: const EdgeInsets.only(top: 15),
+        child: child,
+      ),
+    ],
+  );
 }

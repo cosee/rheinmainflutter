@@ -16,17 +16,17 @@ class WidgetPage extends StatelessWidget {
         children: <Widget>[
           PresentationStepText('"Everything\'s a Widget" - Google', 0),
           PresentationStepText('Lifecycle hook', 1),
-          PresentationStepText('TODO: add code', 1),
-          // _createUiEqualsImage(),
+          PresentationStepText('Blueprint for Elements to draw', 2),
+          _createUiEqualsImage(),
         ],
       );
 
-  // Widget _createUiEqualsImage() => Center(
-  //       child: PresentationStep(
-  //           Image.asset(
-  //             'assets/images/ui_equals_function_of_state.png',
-  //             height: 180,
-  //           ),
-  //           3),
-  //     );
+  Widget _createUiEqualsImage() => Center(
+        child: PresentationStep(
+            Image.asset(
+              'assets/images/ui_equals_function_of_state.png',
+              height: 180,
+            ),
+            3),
+      );
 }

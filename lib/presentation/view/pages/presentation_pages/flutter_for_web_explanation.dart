@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/stepwise_presentation_page.dart';
 import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/presentation_step_text.dart';
 
-class FlutterForWebExplanation extends StatelessWidget {
+class FlutterForWebExplanationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => StepwisePresentationPage(
         titleText: 'Flutter for web',
