@@ -13,9 +13,9 @@ class FlutterExplanation extends StatelessWidget {
   Widget _createContent() => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          PresentationStepText('Flutter', 0),
+          PresentationStepText('Google\'s new UI toolkit', 0),
           PresentationStepText('is', 1),
-          PresentationStepText('awesome!', 2),
+          PresentationStepText('Programming language: Dart', 2),
         ],
       );
 }

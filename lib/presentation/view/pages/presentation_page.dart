@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/build_modes_page.dart';
+import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/declarative_ui_code_page.dart.dart';
+import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/declarative_ui_page.dart';
 
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/experimental_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/fast_deployment_demo.dart';
@@ -25,8 +27,10 @@ class PresentationPage extends StatelessWidget {
     // ExperimentalPage(),
     IntroPage(),
     FlutterExplanation(),
+    // ProgrammingLanguagePage(),
     WidgetPage(),
-    ProgrammingLanguagePage(),
+    DeclarativeUiPage(),
+    DeclarativeUiCodePage(),
     FastDeploymentDemoPage(),
     BuildModesPage(),
     StatelessWidgetPage(),

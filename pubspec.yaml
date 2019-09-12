@@ -49,6 +49,9 @@ flutter:
   assets:
    - assets/images/cosee_logo.png
    - assets/images/ui_equals_function_of_state.png
+   - assets/images/declarative_uI_changes.png
+   - assets/images/imperative_style.png
+   - assets/images/declarative_style.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

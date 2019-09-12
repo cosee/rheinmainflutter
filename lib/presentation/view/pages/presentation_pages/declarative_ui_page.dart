@@ -4,29 +4,28 @@ import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/cos
 import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/presentation_step.dart';
 import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/presentation_step_text.dart';
 
-class WidgetPage extends StatelessWidget {
+class DeclarativeUiPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => StepwisePresentationPage(
-        titleText: 'Widgets',
+        titleText: 'Declarative UI programming',
         child: _createContent(),
       );
 
   Widget _createContent() => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          PresentationStepText('"Everything\'s a Widget" - Google', 0),
-          PresentationStepText('Lifecycle hook', 1),
-          PresentationStepText('TODO: add code', 1),
-          // _createUiEqualsImage(),
+          _createUiEqualsImage(),
+          PresentationStepText('UI is rebuild from scratch to reflect current state of app', 1),
+          PresentationStepText('No imperative modifying of UI  \n   widget.setText(\'text\')', 2),
         ],
       );
 
-  // Widget _createUiEqualsImage() => Center(
-  //       child: PresentationStep(
-  //           Image.asset(
-  //             'assets/images/ui_equals_function_of_state.png',
-  //             height: 180,
-  //           ),
-  //           3),
-  //     );
+  Widget _createUiEqualsImage() => Center(
+        child: PresentationStep(
+            Image.asset(
+              'assets/images/ui_equals_function_of_state.png',
+              height: 180,
+            ),
+            0),
+      );
 }
