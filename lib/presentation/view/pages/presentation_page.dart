@@ -4,7 +4,7 @@ import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/acce
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/build_modes_page.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/declarative_ui_code_page.dart.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/declarative_ui_page.dart';
-import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/fast_deployment_demo.dart';
+import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/fast_development_demo.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_explanation.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_for_web_explanation.dart';
 import 'package:flutterrheinmain/presentation/view/pages/presentation_pages/flutter_for_web_page.dart';
@@ -31,7 +31,7 @@ class PresentationPage extends StatelessWidget {
     WidgetBuildMethodPage(),
     WidgetTreePage(),
     StateManagementPage(),
-    FastDeploymentDemoPage(),
+    FastDevelopmentPage(),
     BuildModesPage(),
     AccessNativeCodePage(),
     FlutterForWebPage(),

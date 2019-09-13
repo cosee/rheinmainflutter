@@ -8,7 +8,6 @@ class HeaderText extends StatelessWidget {
   
   final String text;
 
-
   @override
   Widget build(BuildContext context) => Padding(
     padding: EdgeInsets.only(top: 50),

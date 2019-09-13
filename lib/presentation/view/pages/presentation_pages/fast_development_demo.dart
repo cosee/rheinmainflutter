@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutterrheinmain/presentation/view/widgets/presentation_page/steps/stepwise_presentation_page.dart';
 
-class FastDeploymentDemoPage extends StatelessWidget {
+class FastDevelopmentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => StepwisePresentationPage(
         titleText: 'Fast Development: Demo',
