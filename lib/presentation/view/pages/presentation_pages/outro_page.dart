@@ -9,7 +9,7 @@ class OutroPage extends StatelessWidget {
   Widget build(BuildContext context) => Scaffold(body: _createContent());
 
   Widget _createContent() => Padding(
-        padding: EdgeInsets.only(top: 50),
+        padding: EdgeInsets.only(top: 30),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
@@ -22,6 +22,8 @@ class OutroPage extends StatelessWidget {
   _createHeadeline() => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          _createGitUrl(),
+          SizedBox(height: 10),
           _createHeaderText('Let\'s talk about...'),
           SizedBox(height: 5),
           _createSubHeaderText('Flutter'),
@@ -56,7 +58,6 @@ class OutroPage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            // CoseeText(text),
             _createSubHeaderText('cosee.biz  |  cosee.jobs  |  blog.cosee.biz',
                 fontSize: 20),
             _createCoseeLogo(),
@@ -68,7 +69,7 @@ class OutroPage extends StatelessWidget {
         padding: const EdgeInsets.only(right: 30),
         child: Image.asset(
           'assets/images/cosee_logo.png',
-          height: 55,
+          height: 50,
         ),
       );
 
@@ -76,6 +77,13 @@ class OutroPage extends StatelessWidget {
         'Visit our booth!',
         color: CustomColors.coseeMiddleGreen,
         fontColor: Colors.white,
-        fontSize: 33,
+        fontSize: 30,
+      );
+
+  Widget _createGitUrl() => Center(
+        child: Text(
+          '   Get the App:    github.com/cosee/rheinmainflutter',
+          style: TextStyle(color: Colors.white, fontSize: 20),
+        ),
       );
 }
