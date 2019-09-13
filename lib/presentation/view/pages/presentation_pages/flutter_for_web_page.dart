@@ -40,7 +40,8 @@ class _FlutterForWebPageState extends State<FlutterForWebPage> {
           IconButton(
               icon: Icon(Icons.refresh, color: Colors.white,),
               onPressed: () {
-                webViewController.loadUrl('http://localhost:8000/');
+                // webViewController.loadUrl('http://localhost:8000/');
+                webViewController.loadUrl('http://10.0.2.2:8000/');
                 // return webViewController.reload();
               }
               // }
@@ -55,7 +56,8 @@ class _FlutterForWebPageState extends State<FlutterForWebPage> {
       height: size.height * 0.5,
       width: size.width * 0.9,
       child: WebView(
-        initialUrl: 'http://localhost:8000/',
+        // initialUrl: 'http://localhost:8000/',
+        initialUrl: 'http://10.0.2.2:8000/',
         debuggingEnabled: true,
         javascriptMode: JavascriptMode.unrestricted,
         onWebViewCreated: (WebViewController controller) =>

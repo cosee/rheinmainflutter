@@ -29,9 +29,21 @@ class FlutterHttpServer {
               }
             default:
               {
-                body.request.response.statusCode = 404;
-                body.request.response.write('Not found');
+                String request = body.request.uri.toString();
+                print('Request: $request');
+                
+
+                String _content = await getFileData2(request);
+                body.request.response.statusCode = 200;
+                body.request.response.headers
+                    .set("Content-Type", "image/x-icon");
+                body.request.response.write(_content);
                 body.request.response.close();
+
+                // print('failed request: $request');
+                // body.request.response.statusCode = 404;
+                // body.request.response.write('Not found');
+                // body.request.response.close();
               }
           }
         });
@@ -41,5 +53,8 @@ class FlutterHttpServer {
 
   Future<String> getFileData(String fileName) async {
     return await rootBundle.loadString('assets/web/$fileName');
+  }
+  Future<String> getFileData2(String fileName) async {
+    return await rootBundle.loadString('assets/web$fileName');
   }
 }
