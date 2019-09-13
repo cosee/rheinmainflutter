@@ -40,7 +40,6 @@ class WidgetBuildMethodPage extends StatelessWidget {
 }
 
 class AwesomeWidget extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return Column(

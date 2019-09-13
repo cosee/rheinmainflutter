@@ -20,6 +20,7 @@ class DeclarativeUiPage extends StatelessWidget {
           PresentationStepText(
               'No imperative modifying of UI  \n   widget.setText(\'text\')',
               2),
+          _createSourceText(),
         ],
       );
 
@@ -27,9 +28,19 @@ class DeclarativeUiPage extends StatelessWidget {
         child: PresentationStep(
           Image.asset(
             'assets/images/ui_equals_function_of_state.png',
-            height: 180,
+            height: 160,
           ),
           0,
+        ),
+      );
+
+  Widget _createSourceText() => Center(
+        child: Text(
+          'Source: https://flutter.dev/docs/development/data-and-backend/state-mgmt/declarative',
+          style: TextStyle(
+            fontSize: 10,
+            color: Colors.white,
+          ),
         ),
       );
 }

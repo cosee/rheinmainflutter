@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterrheinmain/core/resources/colors.dart';
 import 'package:flutterrheinmain/web/view/server/http_server.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -17,7 +18,7 @@ class _FlutterForWebPageState extends State<FlutterForWebPage> {
 
   @override
   void initState() {
-    server.startWebServer();
+    // server.startWebServer();
     super.initState();
   }
 
@@ -30,7 +31,7 @@ class _FlutterForWebPageState extends State<FlutterForWebPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           _createHeaderRow(),
-          Center(child: _createWebView(context)),
+          _createWebView(context),
         ],
       );
 
@@ -38,30 +39,30 @@ class _FlutterForWebPageState extends State<FlutterForWebPage> {
         children: <Widget>[
           CoseeText('Yow Dawg, i heared you like hybrid apps...'),
           IconButton(
-              icon: Icon(Icons.refresh, color: Colors.white,),
-              onPressed: () {
-                // webViewController.loadUrl('http://localhost:8000/');
-                webViewController.loadUrl('http://10.0.2.2:8000/');
-                // return webViewController.reload();
-              }
-              // }
-              // ),
+              icon: Icon(
+                Icons.refresh,
+                color: Colors.white,
               ),
+              onPressed: () =>
+                  webViewController.loadUrl('http://10.0.2.2:8000/')),
         ],
       );
 
   Widget _createWebView(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    return SizedBox(
-      height: size.height * 0.5,
-      width: size.width * 0.9,
-      child: WebView(
-        // initialUrl: 'http://localhost:8000/',
-        initialUrl: 'http://10.0.2.2:8000/',
-        debuggingEnabled: true,
-        javascriptMode: JavascriptMode.unrestricted,
-        onWebViewCreated: (WebViewController controller) =>
-            webViewController = controller,
+    return Center(
+      child: Container(
+        height: size.height * 0.58,
+        width: size.width * 0.9,
+      decoration: BoxDecoration(border: Border.all(color: CustomColors.coseeLightGreen)),
+        child: WebView(
+          // initialUrl: 'http://localhost:8000/',
+          initialUrl: 'http://10.0.2.2:8000/',
+          debuggingEnabled: true,
+          javascriptMode: JavascriptMode.unrestricted,
+          onWebViewCreated: (WebViewController controller) =>
+              webViewController = controller,
+        ),
       ),
     );
   }

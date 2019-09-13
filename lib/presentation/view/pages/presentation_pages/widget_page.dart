@@ -18,6 +18,7 @@ class WidgetPage extends StatelessWidget {
           PresentationStepText('Lifecycle hook', 1),
           PresentationStepText('Blueprint for Elements to draw', 2),
           _createUiEqualsImage(),
+          PresentationStep(_createSourceText(),3)
         ],
       );
 
@@ -25,8 +26,18 @@ class WidgetPage extends StatelessWidget {
         child: PresentationStep(
             Image.asset(
               'assets/images/ui_equals_function_of_state.png',
-              height: 172,
+              height: 160,
             ),
             3),
+      );
+
+  Widget _createSourceText() => Center(
+        child: Text(
+          'Source: https://flutter.dev/docs/development/data-and-backend/state-mgmt/declarative',
+          style: TextStyle(
+            fontSize: 10,
+            color: Colors.white,
+          ),
+        ),
       );
 }

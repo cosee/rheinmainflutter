@@ -26,7 +26,6 @@ class PresentationPage extends StatelessWidget {
     IntroPage(),
     FlutterExplanationPage(),
     DeclarativeUiPage(),
-    FlutterForWebPage(),
     DeclarativeUiCodePage(),
     WidgetPage(),
     WidgetBuildMethodPage(),
@@ -35,6 +34,7 @@ class PresentationPage extends StatelessWidget {
     FastDeploymentDemoPage(),
     BuildModesPage(),
     AccessNativeCodePage(),
+    FlutterForWebPage(),
     FlutterForWebExplanationPage(),
     OutroPage(),
   ];
